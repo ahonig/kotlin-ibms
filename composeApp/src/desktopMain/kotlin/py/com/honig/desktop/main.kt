@@ -17,7 +17,7 @@ fun main() = application {
             title = "",
             alwaysOnTop = true,
             state = WindowState(
-                position = WindowPosition.Aligned(Alignment.Center)
+                position = WindowPosition.Aligned(Alignment.Center),
             )
 
         ) {
@@ -32,7 +32,8 @@ fun main() = application {
             onCloseRequest = ::exitApplication,
             title = "IBMS",
             state = WindowState(
-                position = WindowPosition.Aligned(Alignment.Center)
+                position = WindowPosition.Aligned(Alignment.Center),
+                placement = WindowPlacement.Maximized
             )
 
         ) {
